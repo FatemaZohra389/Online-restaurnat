@@ -12,6 +12,9 @@ const LoginPage = () => {
   const onChangePassword = (e) => {
     setPassword(e.target.value);
   };
+  const onClickLogin = () => {
+    alert('Login');
+  }
   console.log(username, password);
   return (
     <div className="login-page">
@@ -29,7 +32,7 @@ const LoginPage = () => {
           <Row>
             <input onChange={onChangePassword} type="password" />
           </Row>
-          <Button variant="primary">Log In</Button>
+          <Button onClick={onClickLogin} variant="primary">Log In</Button>
         </Card.Body>
       </Card>
     </div>
