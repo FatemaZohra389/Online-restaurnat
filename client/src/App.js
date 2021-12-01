@@ -1,7 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Button from "react-bootstrap/Button";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
 function App() {
+  return (
+    <>
+      <LoginPage />
+    </>
+  );
+}
+
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -15,11 +25,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Coding
+          Learn React Coding gfg
         </a>
+
+        <Button variant="primary">Test BUtton</Button>
       </header>
     </div>
   );
-}
+} */
 
 export default App;
